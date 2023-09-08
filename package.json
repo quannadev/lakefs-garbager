@@ -1,0 +1,25 @@
+{
+  "name": "lakefs-garbager",
+  "version": "1.0.0",
+  "author": "Quan Nguyen",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc --project tsconfig.compile.json",
+    "dev": "tsnd --inspect --exit-child --cls --ignore-watch node_modules --respawn --transpile-only -r tsconfig-paths/register src/index.ts",
+    "start": "node build/index.js"
+  },
+  "dependencies": {
+    "@quannadev/lakefs-ts": "^1.0.2",
+    "dotenv": "^16.3.1",
+    "dotenv-expand": "^10.0.0",
+    "duckdb-async": "^0.8.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.5.9",
+    "ts-node": "^10.9.1",
+    "ts-node-dev": "^2.0.0",
+    "tsconfig-paths": "^4.2.0",
+    "tslib": "^2.6.2",
+    "typescript": "^5.2.2"
+  }
+}
