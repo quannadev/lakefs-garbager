@@ -1,4 +1,4 @@
-Lakefs Garbage Collection
+Lakefs Garbage Collector
 ==========================
 
 # Issue:
